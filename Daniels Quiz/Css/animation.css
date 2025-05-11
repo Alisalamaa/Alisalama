@@ -1,0 +1,199 @@
+ @keyframes type-writer {
+
+    
+    0% {
+        content: " |";
+    }
+
+    2% {
+        content: " L|";
+    }
+
+    4% {
+        content: " La|";
+    }
+
+    6% {
+        content: " Larr|";
+    }
+
+    8% {
+        content: " Larry|";
+    }
+
+    10% {
+        content: " Larry |";
+    }
+
+    12% {
+        content: " Larry D|";
+    }
+
+    14% {
+        content: " Larry Da|";
+    }
+
+    16% {
+        content: " Larry Dan|";
+    }
+
+    18% {
+        content: " Larry Dani|";
+    }
+
+    20% {
+        content: " Larry Danie|";
+    }
+
+    22% {
+        content: " Larry Daniel|";
+    }
+
+    30% {
+        content: " Larry Daniels|";
+    }
+
+    
+    32% {
+        content: " Larry Daniel|";
+    }
+
+    34% {
+        content: " Larry Danie|";
+    }
+
+    36% {
+        content: " Larry Dani|";
+    }
+
+    38% {
+        content: " Larry Dan|";
+    }
+
+    40% {
+        content: " Larry Da|";
+    }
+
+    42% {
+        content: " Larry D|";
+    }
+
+    44% {
+        content: " Larry|";
+    }
+
+    46% {
+        content: " Larr|";
+    }
+
+    48% {
+        content: " Lar|";
+    }
+
+    50% {
+        content: " La|";
+    }
+
+    52% {
+        content: " L|";
+    }
+
+    54% {
+        content: " |";
+    }
+
+    
+    56% {
+        content: " D|";
+    }
+
+    58% {
+        content: " De|";
+    }
+
+    60% {
+        content: " Des|";
+    }
+
+    62% {
+        content: " Desi|";
+    }
+
+    64% {
+        content: " Desig|";
+    }
+
+    66% {
+        content: " Design|";
+    }
+
+    68% {
+        content: " Designer|";
+    }
+
+    
+    70% {
+        content: " Designe|";
+    }
+
+    72% {
+        content: " Design|";
+    }
+
+    74% {
+        content: " Desig|";
+    }
+
+    76% {
+        content: " Desi|";
+    }
+
+    78% {
+        content: " De|";
+    }
+
+    80% {
+        content: " Dev|";
+    }
+
+    82% {
+        content: " Devel|";
+    }
+
+    84% {
+        content: " Develo |";
+    }
+
+    86% {
+        content: " Develop|";
+    }
+
+    88% {
+        content: " Develope|";
+    }
+
+    90% {
+        content: " Developer|";
+    }
+
+
+    92% {
+        content: " Developer|";
+    }
+
+    94% {
+        content: " Develope|";
+    }
+
+    96% {
+        content: " Develop|";
+    }
+
+    98% {
+        content: " Develo |";
+    }
+
+    100% {
+        content: " Devel|";
+    }
+} 
