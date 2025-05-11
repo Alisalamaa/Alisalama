@@ -1,0 +1,736 @@
+/* Start of Global Styles */
+:root {
+    --primary-color: #343434;
+    --primary-color-rgb: rgb(52, 52, 52);
+    --text-color: #748182;
+    --text-color-rgb: rgb(116, 130, 130);
+    --main-durations: 0.3s;
+    --background-color: #F7F7F7;
+}
+
+
+.body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+/* End of Global Styles */
+
+
+/* Start of Nav-Bar */
+
+
+h1.logo {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.navbar.scrolled {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+}
+
+.navbar {
+    transition: background 0.3s;
+}
+
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 8px 15px;
+    position: relative;
+    transition: var(--main-durations);
+}
+
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--main-durations);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* End of Nav-Bar */
+
+
+/* < !-- Start of Header --> */
+.header {
+    background-image: url(./../imgs/bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.header .container h5 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header .container h1 {
+    font-size: 60px;
+    font-weight: 200;
+
+}
+
+.header h1:after {
+    content: "";
+    animation: type-writer 6s infinite;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.social-links i {
+    font-size: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: var(--main-durations);
+    padding: .625rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.social-links i:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+
+}
+
+/* End of Header */
+.about-section p {
+    font-size: 18px;
+    color: var(--text-color)
+}
+
+.about-section b {
+    font-weight: 700;
+}
+
+/* Start of About Section */
+
+.about-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.about-img-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: -3.125rem;
+    left: -3.125rem;
+    width: calc(100% + 3.125rem);
+    height: calc(100% + 3.125rem);
+    background-image: radial-gradient(#ddd 1.5008px, transparent 1.5008px);
+    background-size: 1rem 1rem;
+    z-index: 0;
+    border-radius: 1.25rem;
+}
+
+.about-img {
+    position: relative;
+    z-index: 1;
+}
+
+.progress-bar {
+    flex-direction: row;
+    color: #fff !important;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    border-radius: .3125rem;
+    transition: width 1s;
+    height: 100%;
+}
+
+.skill-text,
+.skill-percent {
+    color: #fff !important;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+#btn-download {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#btn-download:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: .0625rem solid var(--primary-color);
+}
+
+/* End of About Section */
+
+
+
+/* Start of Services Section */
+
+
+.services-section {
+    background-color: var(--background-color);
+}
+
+
+.services-section h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+
+}
+
+.services-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 15%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+
+
+.service-card #icon-circle {
+    transition: var(--main-durations);
+    color: #343434;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 1.25rem;
+}
+
+.service-card:hover #icon-circle {
+    color: white;
+    background-color: #343434;
+    transform: scale(1.05);
+}
+
+
+/* End of Services Section */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Work Section */
+
+.works-section h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 2.5rem;
+}
+
+.works-section h3:after {
+    content: "";
+    width: 15%;
+    height: 1.875rem;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+
+
+
+.works-section .item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity var(--main-durations) ease;
+}
+
+
+.works-section .item .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    transition: top var(--main-durations) ease;
+}
+
+.works-section .item:hover .content {
+    top: 0;
+}
+
+.works-section .item:hover::after {
+    opacity: 1;
+}
+
+
+.works-section .nav-tabs {
+    --bs-nav-tabs-border-color:transparent;
+}
+.nav-tabs .nav-link {
+    --bs-nav-link-color:black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--main-durations);
+}
+
+
+.nav-tabs .nav-link.active {
+    --bs-nav-tabs-link-active-border-color:transparent transparent transparent;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    --bs-nav-link-hover-color:var(--bs-nav-tabs-link-active-color);
+--bs-nav-tabs-link-hover-border-color:transparent transparent transparent;
+}
+
+
+.works-section .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    font-size: .625rem;
+    margin: 0 .3125rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+ .works-section .icon-btn:hover {
+    background: #fff;
+    color: #111;
+    border: .0625rem solid #111;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/* End of Work Section */
+/* ===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Client Section */
+
+.testimonial-section h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-section h2:after {
+    content: "";
+    width: 22%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.testimonial-section {
+    background-color: var(--background-color);
+}
+
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonial-section h6 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.testimonial-section span {
+    font-size: 12px;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-style: "Poppins", sans-serif;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -50px;
+    z-index: 10;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #7a8c87;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+    border: none;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #7a8c87;
+}
+
+/* End of Client Section */
+
+/* Start of Numbers Section */
+
+.numbers {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.numbers .item i {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.numbers .item h3 {
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+
+/* End of Numbers Section */
+
+/* Start of Team Section */
+
+.team-section {
+    background-color: var(--background-color);
+}
+
+
+.team-section h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+
+}
+
+.team-section h2:after {
+    content: "";
+    width: 18%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+    transform: rotate(360deg);
+    translate: 0 0;
+    transition: all 0.5s;
+}
+
+.team-card img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+    transition: var(--main-durations);
+}
+
+
+.team-info {
+    background-color: #5B5B5B;
+    color: #fff;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    padding: 1.5rem 1rem 1.2rem 1rem;
+}
+
+.team-info h4,
+.team-info h5 {
+    color: #fff;
+}
+
+.team-info h4 {
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.team-info h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .0625rem;
+    margin-bottom: 0;
+}
+
+.team-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 83.5%;
+    background: rgba(255, 255, 255, 0.80);
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scale: 1.05;
+    transition: scale 0.3s;
+}
+
+.social-icons {
+    display: flex;
+    gap: .9375rem;
+}
+
+
+.team-section .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 .3125rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+ .team-section .icon-btn:hover {
+    background: #fff;
+    color: #111;
+    border: .0625rem solid #111;
+    transform: scale(1.2);
+}
+
+
+
+/* End of Team Section */
+
+/* Start of Contact Section */
+
+
+
+
+.contact-section h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+}
+
+.contact-section h3:after {
+    content: "";
+    width: 18%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.contact-icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon-circle:hover {
+    background-color: #333;
+    color: #fff;
+    transition: background 0.3s;
+    
+}
+
+.contact-icon-circle i {
+    color: #222;
+}
+
+
+
+.contact-section .col-md-4:hover .contact-icon-circle {
+    background: #343434;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    
+}
+
+.contact-section .col-md-4:hover .contact-icon-circle i {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.contact-section .form-control {
+    background: #F4F4F4;
+    border: none;
+    border-radius: 8px;
+    font-size: 17.6px;
+    box-shadow: none;
+}
+
+.contact-section .form-control:focus {
+    background: #f8f9fa;
+    box-shadow: 0 0 0 2px #34343422;
+    border: none;
+}
+
+.contact-section .btn-dark {
+    background: #343434;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+.contact-section .btn-dark:hover {
+    background: #ffffff;
+    color: #343434;
+    border: 1px solid #343434;
+    transition: background 0.4s , color 0.7s , border 0.4s ease-in-out;
+}
+
+/* End of Contact Section */
+
+/* Start of Footer Section */
+
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+footer p {
+    font-size: .8125rem;
+    word-spacing: .125rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    
+    
+
+}
+
+
+
+
